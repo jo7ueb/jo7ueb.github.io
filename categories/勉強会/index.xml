@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ねっぽのゆるふわメモ</title>
-    <link>http://neppo.net/tags/</link>
-    <description>Recent content on ねっぽのゆるふわメモ</description>
+    <title>勉強会 on ねっぽのゆるふわメモ</title>
+    <link>http://neppo.net/categories/%E5%8B%89%E5%BC%B7%E4%BC%9A/</link>
+    <description>Recent content in 勉強会 on ねっぽのゆるふわメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 18 Oct 2017 23:49:52 +0900</lastBuildDate>
     
-	<atom:link href="http://neppo.net/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://neppo.net/categories/%E5%8B%89%E5%BC%B7%E4%BC%9A/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
