@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ねっぽのゆるふわメモ</title>
+    <link>http://neppo.net/</link>
+    <description>Recent content on ねっぽのゆるふわメモ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 18 Oct 2017 14:30:16 +0900</lastBuildDate>
+    
+	<atom:link href="http://neppo.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ブログ始めました</title>
+      <link>http://neppo.net/blog/first_post/</link>
+      <pubDate>Wed, 18 Oct 2017 14:30:16 +0900</pubDate>
+      
+      <guid>http://neppo.net/blog/first_post/</guid>
+      <description>はじめまして、ゆるふわエンジニアのねっぽです。 この度、アウトプットの場を作りたいということで、今更ながらブログをはじめました。
+このブログでは、主に技術周りで勉強したこと・読んだ論文や参加した勉強会の紹介などを まとめていこうと考えています。 その他にも、これは書きたいと思ったことがあれば随時更新していきます。
+三日坊主にならないよう、程々にやっていきたいと思いますので、よろしくお願いします。</description>
+    </item>
+    
+  </channel>
+</rss>
