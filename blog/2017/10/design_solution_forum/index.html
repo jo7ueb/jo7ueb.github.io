@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.29" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Design Solution Forum 2017 にいってきたよ！ &middot; ねっぽのゆるふわメモ</title>
+
+  
+  <link rel="stylesheet" href="http://neppo.net/css/print.css" media="print">
+  <link rel="stylesheet" href="http://neppo.net/css/poole.css">
+  <link rel="stylesheet" href="http://neppo.net/css/syntax.css">
+  <link rel="stylesheet" href="http://neppo.net/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="ねっぽのゆるふわメモ" />
+</head>
+
+  <body class="theme-base-0d ">
+  <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://neppo.net/"><h1>ねっぽのゆるふわメモ</h1></a>
+      <p class="lead">
+       ゆるふわエンジニアのゆるふわな活動記録 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="http://neppo.net/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2017. All rights reserved. </p>
+  </div>
+</div>
+
+    <div class="content container">
+    <div class="post">
+  <h1>Design Solution Forum 2017 にいってきたよ！</h1>
+  <span class="post-date">Thu, Oct 19, 2017</span>
+  
+
+<p>ども、ねっぽです。</p>
+
+<p>RTLのお陰でソフトウェアとハードウェアの垣根がふわっとしているということで、
+<strong>ソフトウェアエンジニアといえどもハードがわからないとダメだ</strong> という気持ちを持っています。
+今回、ハードウェア寄りのセミナーを受けてみようということで、
+<a href="http://www.dsforum.jp/2017/">Design Solution Forum</a> にいってきました！</p>
+
+<p>今回の講演では Deep Learning の推論を組込み環境で動かそう、という発表が多く、
+図らずも最近の業務に近い話が聞けました。</p>
+
+<p>クラウドコンピューティングが流行ってなんでもかんでもクラウドで動かそうという機運がありますが、
+一方エッジ側でもある程度計算処理を動かす需要があると前から感じていました。</p>
+
+<p>エッジ側でヘビーな計算処理を動かすためには、なるべく低電力で低コストなハードウェアが必要になりますし、
+ソフトウェアも様々な制約条件が課せられるため、簡単ではないと思われます。
+そんな状況で、ソフトウェアとハードウェア両方がわかる人間として、うまく橋渡しできる人間になりたいと思った
+就活時代の私を思い出させる、いい時間を過ごすことができました。</p>
+
+<h2 id="講演内容ざっくりまとめ">講演内容ざっくりまとめ</h2>
+
+<p>下の方に各公演の内容をまとめていますが、全体を通してざっくりまとめました。</p>
+
+<ul>
+<li>話題の大半は Deep Learning と RISC-V
+
+<ul>
+<li>Deep の話は正直似通ったのが多かったので、RISCのセッションも聞きに行けばよかった</li>
+</ul></li>
+<li>AI(Deep Learning) 技術を活用するには、エッジ側での計算がある程度必要
+
+<ul>
+<li>エッジヘビーコンピューティングの需要は高そう
+
+<ul>
+<li>必要なのはストレージではなく、計算資源と、限られた計算資源で効率的に問題を解くアルゴリズムだと思われる</li>
+<li>Deep Learning では量子化(2値化、対数量子化)など、またその条件下で効率よく学習するアルゴリズムが必要</li>
+</ul></li>
+<li>エッジ側の計算資源としては、組込みGPU or HWA (includes FPGA)
+
+<ul>
+<li>RasPi の GPU では、情報公開が進み誰でもアセンブラをかける環境になった</li>
+<li>組込みこそ、ヘテロジニアス・マルチコア構成となる時代へ
+
+<ul>
+<li>大規模になればなるほど自動生成のアプローチが重要</li>
+</ul></li>
+<li>Deep Learning 等移り変わりの激しい状況下で、FPGAは有効</li>
+</ul></li>
+</ul></li>
+<li>日本が世界と戦うためには依然モノづくり、AIを組込んだ製品で差別化したい</li>
+<li>自動生成の話が複数
+
+<ul>
+<li>Keras/Chainerモデルから組込み環境向けC/RTLの生成など</li>
+<li>マルチコア向けとして、ドイツの Silexica が興味深い</li>
+</ul></li>
+</ul>
+
+<h2 id="受講メモ">受講メモ</h2>
+
+<p>各講演のポイントをざっくりまとめました。
+流し読みがおすすめです。</p>
+
+<h3 id="基調講演-自動運転的な話">基調講演: 自動運転的な話</h3>
+
+<ul>
+<li>Google は人間の介入なしに 8000km 走行可能なまでに進んでいる</li>
+<li>各社 Level3 はスキップして、Level4 に進もうとしている</li>
+<li>Mobillity as a Service の時代がやってくる</li>
+</ul>
+
+<h3 id="session-c-1-raspi-でディープの推論">Session C-1: RasPi でディープの推論</h3>
+
+<ul>
+<li><a href="http://idein.jp">Idein</a> さん: モバイル向け組込みGPUを用いたエッジコンピューティングのベンチャー企業</li>
+<li>RasPi 搭載 GPU の仕様が Broadcom より2014年に公開され、下記のツールを作った
+
+<ul>
+<li><a href="https://github.com/nineties/py-videocore">PyVideoCore</a>: GPU用アセンブラ、実行基盤</li>
+<li>QMKL: 数値計算ライブラリ</li>
+<li>QDNN: DNNライブラリ</li>
+<li>NN計算グラフコンパイラ・最適化</li>
+<li>MLIR: 計算グラフを表現する中間言語 (?)</li>
+</ul></li>
+<li>RasPi3 / RasPi zero でリアルタイムな推論ができた
+
+<ul>
+<li>GoogLeNet: 280ms on Pi3 / 670 on Pi zero</li>
+<li>ResNet50: 728ms on Pi3</li>
+<li>SqueezeNet: 180ms on Pi3</li>
+<li>YOLO tiny: 580ms on Pi3</li>
+</ul></li>
+<li>認識ネットワークの進化は、同じ精度を小さいネットワークで実現する方向に進んだ
+
+<ul>
+<li>MobileNet 2017</li>
+<li>DenseNet 2016</li>
+</ul></li>
+<li>所感
+
+<ul>
+<li>VideoCore 向けの OpenCL 環境作ったらちょっとは流行るかな？</li>
+</ul></li>
+</ul>
+
+<h3 id="session-c-2-検証ip">Session C-2: 検証IP</h3>
+
+<ul>
+<li>インドの <a href="http://www.smart-dv.com">SmartDV</a> の宣伝</li>
+<li>ドキュメントが揃っている、1000ページ級
+
+<ul>
+<li>ヘルプデスクでは、質問が来るとドキュメントに対するポインタを返すだけで済んでいる</li>
+<li>日常業務でも、積極的なドキュメント化は有用と感じた</li>
+</ul></li>
+<li>合成可能なVIPによって、検証が加速する
+
+<ul>
+<li>シミュレーション/FPGA同じAPIでVIPが使える</li>
+<li>RTLシミュレーションに比べ830倍高速</li>
+</ul></li>
+<li>通信系のエラーインジェクション等、通信系ではVIPによる検証が必須</li>
+</ul>
+
+<h3 id="session-c-4-コキュートス-kerasモデルをcに自動変換">Session C-4: コキュートス (KerasモデルをCに自動変換)</h3>
+
+<ul>
+<li>市場動向について
+
+<ul>
+<li>携帯電話向け SoC でディープラーニングの推論が動く時代に</li>
+<li>各社組込み向けディープラーニングフレームワークを開発</li>
+<li>日本でも官民一体で組込み向けDLを推進中</li>
+</ul></li>
+<li>Kerasのモデル(JSON &amp; HDF5)を読み込んで、C言語のコードを生成
+
+<ul>
+<li>グラフの最適化等はやらない</li>
+<li>生成したCソースファイルを、人間が手動で最適化可能</li>
+<li>CPU + NEON での動作を想定、FPGA w/ HLS はうまく動いていない</li>
+</ul></li>
+<li>組込み向けの特徴
+
+<ul>
+<li>メモリ動的確保やファイルシステム不要</li>
+<li>メモリの使用量が事前にわかる</li>
+<li>依存ライブラリを少なくしている</li>
+</ul></li>
+</ul>
+
+<h3 id="session-c-5-ceva-dsp">Session C-5: CEVA DSP</h3>
+
+<ul>
+<li>DSPコア数やCNN HWAの有無をコンフィグ可能なIPを提供</li>
+<li>HW構成が変わっても、ソフトウェア側は単一のライブラリ経由で使用可能
+
+<ul>
+<li>cuDNNとかもそうだが、アプリ側の再利用性を確保することが重要</li>
+</ul></li>
+</ul>
+
+<h3 id="session-c-6-2値化cnn-on-fpga-for-歩行者検出">Session C-6: 2値化CNN on FPGA for 歩行者検出</h3>
+
+<ul>
+<li>DLを組込み環境で動かすなら、FPGAが適している
+
+<ul>
+<li>GPU(Jetsonを想定)は、電力食いすぎて使えない</li>
+<li>アルゴリズムの高速な進歩、アプリごとのカスタム構成に対応できる</li>
+</ul></li>
+<li>FPGA化するためには2値化は必須
+
+<ul>
+<li>乗算がXNORで書ける</li>
+<li>重みのデータ量が大幅に削減 -&gt; block RAM に乗る
+外付けDRAMはオンチップメモリの200倍電力を食う</li>
+<li>使用するネットワークの選定が重要</li>
+<li>複数のモデルを比較したとき、ラベル数の大小によって性能が逆転する場合がある</li>
+<li>HLS(SDSoC)がなかなか使い物になる</li>
+</ul></li>
+</ul>
+
+<h3 id="session-d-7-fpgaボードの宣伝">Session D-7: FPGAボードの宣伝</h3>
+
+<ul>
+<li>Amazon F1インスタンスと同じ石を積んだボードなど、多種多様なラインナップ</li>
+</ul>
+
+<h3 id="session-c-8-アルゴリズム-ハードウェアの協調設計">Session C-8: アルゴリズム・ハードウェアの協調設計</h3>
+
+<ul>
+<li>CNNを専用チップで解きたい</li>
+<li>アルゴリズムを検討する時に、ハードウェアの特性を意識することで、高精度でいい感じに動くシステムを構築できた</li>
+<li>ハードウェア側の工夫
+
+<ul>
+<li>数値表現の工夫(FloatingPoint -&gt; FixedPoint -&gt; Binary)</li>
+<li>BRein Memory を提案
+
+<ul>
+<li>初の Processing in Memory (メモリセル内での演算) アーキテクチャ</li>
+<li>重みを読む時に同時に積を計算する(XNORする)</li>
+<li>CPUより100倍速く、27k倍電力効率が良い</li>
+</ul></li>
+</ul></li>
+<li>アルゴリズム側の工夫
+
+<ul>
+<li>学習時に量子化誤差を考慮して loss を計算する</li>
+<li>量子化でビット数を削減しても、精度を出すことができる</li>
+</ul></li>
+</ul>
+
+<h3 id="session-d-9-マルチコアソフトウェアの自動生成">Session D-9: マルチコアソフトウェアの自動生成</h3>
+
+<ul>
+<li>ドイツの <a href="https://www.silexica.com/ja/">Silexica</a> の紹介
+
+<ul>
+<li>創立2-3年のベンチャー企業、50人ほどのメンバー</li>
+<li>$8Mの投資を受けたらしい</li>
+<li>大学院の研究をもとに起業したとかなんとか</li>
+</ul></li>
+<li>一般的にマルチコア開発は職人の勘で作られている
+
+<ul>
+<li>コア間通信のコスト見積もりを誤り、マルチコア化で遅くなる事例多数</li>
+<li>タスク数が増加するとともに、難易度が爆発的に増加</li>
+</ul></li>
+<li>コード解析から、並列化(タスク並列・データ並列・パイプライン化)可能な部分を検出</li>
+<li>動的解析もやる
+
+<ul>
+<li>キャッシュミスの測定</li>
+<li>バスの占有率・通信遅延</li>
+</ul></li>
+<li>解析結果をもとに、動作アーキテクチャに合わせた最適化を実施する</li>
+<li>無料のトライアルがあるので、ぜひやったほうがいいと思う</li>
+</ul>
+
+<h3 id="session-c-10-ai-x-組込み">Session C-10: AI x 組込み</h3>
+
+<ul>
+<li>組込み協会でAI研究会的なものを立ち上げた宣伝がメイン</li>
+<li>これまでの技術動向
+
+<ul>
+<li>CNNでコンピュータが目を手に入れた</li>
+<li>ROSの発展で足や翼を手に入れた
+
+<ul>
+<li>ロボット制御が誰でもできるようになったという意味らしい</li>
+</ul></li>
+<li>周囲の状況を見てロボットを制御できるようになった</li>
+</ul></li>
+<li>人間は周囲の状況だけでなく、知識をもとにして動作を決定している</li>
+<li>知識を計算機でどう表現するかが、まだ未解決
+
+<ul>
+<li>どのようにルールを獲得させるかが問題</li>
+<li>Semantic Web でやっているオントロジーといった技術を使いたい?</li>
+</ul></li>
+</ul>
+
+</div>
+
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "neppo-net" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-108252466-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

@@ -6,10 +6,25 @@
     <description>Recent content in Blogs on ねっぽのゆるふわメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Oct 2017 23:49:52 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 19 Oct 2017 14:46:42 +0900</lastBuildDate>
     
 	<atom:link href="http://neppo.net/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Design Solution Forum 2017 にいってきたよ！</title>
+      <link>http://neppo.net/blog/2017/10/design_solution_forum/</link>
+      <pubDate>Thu, 19 Oct 2017 14:46:42 +0900</pubDate>
+      
+      <guid>http://neppo.net/blog/2017/10/design_solution_forum/</guid>
+      <description>ども、ねっぽです。
+RTLのお陰でソフトウェアとハードウェアの垣根がふわっとしているということで、 ソフトウェアエンジニアといえどもハードがわからないとダメだ という気持ちを持っています。 今回、ハードウェア寄りのセミナーを受けてみようということで、 Design Solution Forum にいってきました！
+今回の講演では Deep Learning の推論を組込み環境で動かそう、という発表が多く、 図らずも最近の業務に近い話が聞けました。
+クラウドコンピューティングが流行ってなんでもかんでもクラウドで動かそうという機運がありますが、 一方エッジ側でもある程度計算処理を動かす需要があると前から感じていました。
+エッジ側でヘビーな計算処理を動かすためには、なるべく低電力で低コストなハードウェアが必要になりますし、 ソフトウェアも様々な制約条件が課せられるため、簡単ではないと思われます。 そんな状況で、ソフトウェアとハードウェア両方がわかる人間として、うまく橋渡しできる人間になりたいと思った 就活時代の私を思い出させる、いい時間を過ごすことができました。
+講演内容ざっくりまとめ 下の方に各公演の内容をまとめていますが、全体を通してざっくりまとめました。
+ 話題の大半は Deep Learning と RISC-V  Deep の話は正直似通ったのが多かったので、RISCのセッションも聞きに行けばよかった  AI(Deep Learning) 技術を活用するには、エッジ側での計算がある程度必要  エッジヘビーコンピューティングの需要は高そう  必要なのはストレージではなく、計算資源と、限られた計算資源で効率的に問題を解くアルゴリズムだと思われる Deep Learning では量子化(2値化、対数量子化)など、またその条件下で効率よく学習するアルゴリズムが必要  エッジ側の計算資源としては、組込みGPU or HWA (includes FPGA)  RasPi の GPU では、情報公開が進み誰でもアセンブラをかける環境になった 組込みこそ、ヘテロジニアス・マルチコア構成となる時代へ  大規模になればなるほど自動生成のアプローチが重要  Deep Learning 等移り変わりの激しい状況下で、FPGAは有効   日本が世界と戦うためには依然モノづくり、AIを組込んだ製品で差別化したい 自動生成の話が複数  Keras/Chainerモデルから組込み環境向けC/RTLの生成など マルチコア向けとして、ドイツの Silexica が興味深い   受講メモ 各講演のポイントをざっくりまとめました。 流し読みがおすすめです。</description>
+    </item>
     
     <item>
       <title>「20代エンジニアのキャリア論」を聞いてきた</title>
