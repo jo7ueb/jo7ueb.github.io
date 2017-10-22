@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://neppo.net/blog/2017/10/numpy_code_reading/</loc>
+    <lastmod>2017-10-22T17:45:46+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://neppo.net/blog/2017/10/design_solution_forum/</loc>
     <lastmod>2017-10-19T14:46:42+09:00</lastmod>
   </url>
@@ -25,12 +30,18 @@
   
   <url>
     <loc>http://neppo.net/blog/</loc>
-    <lastmod>2017-10-19T14:46:42+09:00</lastmod>
+    <lastmod>2017-10-22T17:45:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://neppo.net/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://neppo.net/tags/numpy/</loc>
+    <lastmod>2017-10-22T17:45:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,13 +53,25 @@
   
   <url>
     <loc>http://neppo.net/</loc>
-    <lastmod>2017-10-19T14:46:42+09:00</lastmod>
+    <lastmod>2017-10-22T17:45:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://neppo.net/categories/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2/</loc>
     <lastmod>2017-10-18T23:49:52+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://neppo.net/tags/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0/</loc>
+    <lastmod>2017-10-22T17:45:46+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://neppo.net/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</loc>
+    <lastmod>2017-10-22T17:45:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
