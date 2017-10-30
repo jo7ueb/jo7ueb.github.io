@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on ねっぽのゆるふわメモ</title>
+    <link>https://neppo.net/categories/ai/</link>
+    <description>Recent content in Ai on ねっぽのゆるふわメモ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 30 Oct 2017 23:20:33 +0900</lastBuildDate>
+    
+	<atom:link href="https://neppo.net/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>汎用人工知能搭載ヒューマノイドロボットを作ろうとしている人に出会った</title>
+      <link>https://neppo.net/blog/2017/10/agi_humanoid/</link>
+      <pubDate>Mon, 30 Oct 2017 23:20:33 +0900</pubDate>
+      
+      <guid>https://neppo.net/blog/2017/10/agi_humanoid/</guid>
+      <description>ども、ねっぽです。 今回は Team-AI さん主催の 汎用人工知能を作ろう という勉強会に参加してきました。 今回はその内容をレポートしたいと思います。 参加したき</description>
+    </item>
+    
+  </channel>
+</rss>

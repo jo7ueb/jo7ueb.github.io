@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://neppo.net/blog/2017/10/agi_humanoid/</loc>
+    <lastmod>2017-10-30T23:20:33+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://neppo.net/blog/2017/10/numpy_code_reading/</loc>
     <lastmod>2017-10-22T17:45:46+09:00</lastmod>
   </url>
@@ -24,18 +29,25 @@
   
   <url>
     <loc>https://neppo.net/tags/</loc>
-    <lastmod>2017-10-19T14:46:42+09:00</lastmod>
+    <lastmod>2017-10-30T23:20:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://neppo.net/categories/ai/</loc>
+    <lastmod>2017-10-30T23:20:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://neppo.net/blog/</loc>
-    <lastmod>2017-10-22T17:45:46+09:00</lastmod>
+    <lastmod>2017-10-30T23:20:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://neppo.net/categories/</loc>
+    <lastmod>2017-10-30T23:20:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -47,13 +59,13 @@
   
   <url>
     <loc>https://neppo.net/tags/</loc>
-    <lastmod>2017-10-19T14:46:42+09:00</lastmod>
+    <lastmod>2017-10-30T23:20:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://neppo.net/</loc>
-    <lastmod>2017-10-22T17:45:46+09:00</lastmod>
+    <lastmod>2017-10-30T23:20:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   

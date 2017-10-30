@@ -6,10 +6,19 @@
     <description>Recent content on ねっぽのゆるふわメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Oct 2017 17:45:46 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Oct 2017 23:20:33 +0900</lastBuildDate>
     
 	<atom:link href="https://neppo.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>汎用人工知能搭載ヒューマノイドロボットを作ろうとしている人に出会った</title>
+      <link>https://neppo.net/blog/2017/10/agi_humanoid/</link>
+      <pubDate>Mon, 30 Oct 2017 23:20:33 +0900</pubDate>
+      
+      <guid>https://neppo.net/blog/2017/10/agi_humanoid/</guid>
+      <description>ども、ねっぽです。 今回は Team-AI さん主催の 汎用人工知能を作ろう という勉強会に参加してきました。 今回はその内容をレポートしたいと思います。 参加したき</description>
+    </item>
     
     <item>
       <title>実録！コードリーディング入門 ~ NumPy rollaxis &amp; transpose 編 ~ を公開したよ</title>
