@@ -6,10 +6,19 @@
     <description>Recent content on ねっぽのゆるふわメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 03 Nov 2017 00:03:48 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Nov 2017 21:07:35 +0900</lastBuildDate>
     
 	<atom:link href="https://neppo.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Railsアプリ radvent インストールメモ</title>
+      <link>https://neppo.net/blog/2017/11/install_radvent/</link>
+      <pubDate>Wed, 08 Nov 2017 21:07:35 +0900</pubDate>
+      
+      <guid>https://neppo.net/blog/2017/11/install_radvent/</guid>
+      <description>ども、ねっぽです。 そろそろアドベントカレンダーの時期が近づいてきましたね！ アドベントカレンダーといえば Qiita が定番ですが、イントラ環境で動かした</description>
+    </item>
     
     <item>
       <title>目指せ復職！リワーク施設を探してみた</title>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>メモ on ねっぽのゆるふわメモ</title>
+    <link>https://neppo.net/categories/%E3%83%A1%E3%83%A2/</link>
+    <description>Recent content in メモ on ねっぽのゆるふわメモ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 08 Nov 2017 21:07:35 +0900</lastBuildDate>
+    
+	<atom:link href="https://neppo.net/categories/%E3%83%A1%E3%83%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Railsアプリ radvent インストールメモ</title>
+      <link>https://neppo.net/blog/2017/11/install_radvent/</link>
+      <pubDate>Wed, 08 Nov 2017 21:07:35 +0900</pubDate>
+      
+      <guid>https://neppo.net/blog/2017/11/install_radvent/</guid>
+      <description>ども、ねっぽです。 そろそろアドベントカレンダーの時期が近づいてきましたね！ アドベントカレンダーといえば Qiita が定番ですが、イントラ環境で動かした</description>
+    </item>
+    
+  </channel>
+</rss>
