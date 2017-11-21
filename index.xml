@@ -6,10 +6,19 @@
     <description>Recent content on ねっぽのゆるふわメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 08 Nov 2017 21:07:35 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 21 Nov 2017 20:11:10 +0900</lastBuildDate>
     
 	<atom:link href="https://neppo.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>wget で認証突破！ Cityspaces データセットをダウンロードする</title>
+      <link>https://neppo.net/blog/2017/11/1121_wget_cityspaces/</link>
+      <pubDate>Tue, 21 Nov 2017 20:11:10 +0900</pubDate>
+      
+      <guid>https://neppo.net/blog/2017/11/1121_wget_cityspaces/</guid>
+      <description>ごぶさたです、ねっぽです。 最近、自宅の計算用マシンが息を吹き返しました。 システムを入れていたSSDがしばらく前に死亡し、以降ほったらかしにな</description>
+    </item>
     
     <item>
       <title>Railsアプリ radvent インストールメモ</title>
